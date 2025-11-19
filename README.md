@@ -35,13 +35,25 @@ TEXTSPEAKER/
 
 ## Features
 
+### Interactive Web Interface
 - Text input form in React UI
 - Django REST API endpoint `/api/generatevideo/`
-- Text-to-Speech (TTS) conversion using Coqui TTS
-- Avatar video generation (placeholder for Wav2Lip/SadTalker integration)
 - Video playback and download in browser
 - CORS-enabled for local development
 - Media file serving for generated videos
+
+### Batch Processing from CSV
+- **NEW**: Automatically generate multiple videos from CSV file
+- Process dozens or hundreds of text entries at once
+- Customizable filenames and output directory
+- Progress tracking and error reporting
+- See [CSV_VIDEO_GUIDE.md](CSV_VIDEO_GUIDE.md) for detailed instructions
+
+### Video Generation
+- Text-to-Speech (TTS) conversion (placeholder for real TTS integration)
+- Avatar video generation (placeholder for Wav2Lip/SadTalker integration)
+- MoviePy-based video creation
+- Support for custom avatar images
 
 ## Setup Instructions
 
@@ -106,6 +118,32 @@ TEXTSPEAKER/
    The frontend will open automatically at `http://localhost:3000/`
 
 ## Usage
+
+### Method 1: Batch Processing from CSV (Recommended for Multiple Videos)
+
+Generate multiple videos at once from a CSV file:
+
+```bash
+# Quick start with sample data
+python generate_videos.py sample_texts.csv
+
+# Custom output directory
+python generate_videos.py your_texts.csv --output-dir my_videos
+
+# Use custom avatar
+python generate_videos.py your_texts.csv --avatar path/to/avatar.png
+```
+
+**CSV Format:**
+```csv
+text,filename,avatar
+"Your text here","video_name",
+"More text","another_video",
+```
+
+See [CSV_VIDEO_GUIDE.md](CSV_VIDEO_GUIDE.md) for complete documentation on batch processing.
+
+### Method 2: Interactive Web Interface (For Single Videos)
 
 1. Ensure both backend (Django on port 8000) and frontend (React on port 3000) are running
 2. Open your browser to `http://localhost:3000`
