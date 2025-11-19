@@ -50,6 +50,11 @@ db.sqlite3
 media/
 static/
 
+# Generated videos and audio
+output/
+django_output/
+test_output/
+
 # Node
 node_modules/
 npm-debug.log*
