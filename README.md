@@ -5,6 +5,10 @@ A full-stack application for generating talking avatar videos from text input. T
 - **React frontend** (Node.js/npm) for the user interface
 - **Local ML models** only - no external SaaS APIs required
 
+## 🚀 Quick Start
+
+**New to the project?** See [QUICKSTART.md](QUICKSTART.md) for step-by-step setup instructions!
+
 ## Architecture
 
 ```
