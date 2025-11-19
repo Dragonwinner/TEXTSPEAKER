@@ -1,0 +1,9 @@
+django>=4.2,<5.0
+djangorestframework>=3.14,<4.0
+django-cors-headers>=4.0,<5.0
+# moviepy>=1.0.3
+# torch>=2.0.0
+# torchaudio>=2.0.0
+# TTS>=0.20.0
+# Uncomment and install the above packages when ready to use TTS and video generation
+# Additional packages for Wav2Lip or SadTalker can be added here
