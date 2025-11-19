@@ -1,0 +1,6 @@
+text,filename,avatar
+"Hello! Welcome to the Text to Speech Video Generator. This is a demonstration of how the system works.","welcome_video",
+"This technology converts your written text into spoken words with an animated avatar.","tech_demo",
+"You can use this for educational content, presentations, or any other purpose where you need narrated videos.","use_cases",
+"Simply provide your text in a CSV file, and the system will generate videos automatically.","how_to_use",
+"Thank you for trying out this text-to-video generation system!","thank_you",
